@@ -37,7 +37,7 @@ while running:
     for x, y in snake:
         pygame.draw.rect(screen, (0, 220, 100), (x, y, S - 2, S - 2))
     pygame.draw.rect(screen, (255, 60, 60), (*food, S, S))
-    screen.blit(font.render(f"Ball: {score}", True, (255, 255, 255)), (10, 10))
+    screen.blit(font.render(f"Score: {score}", True, (255, 255, 255)), (10, 10))
     pygame.display.flip()
     clock.tick(10)
 
